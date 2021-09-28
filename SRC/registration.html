@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<!--add a title (a) -->
+	<title >Registration Form</title>
+
+	<!--Connect the style sheet (lab 3)-->
+	<link rel="stylesheet" type="text/css"  href="styles/styles.css">
+	
+	<style>
+
+		form{
+			width: 500px;
+			margin:auto;
+			padding: 20px;
+			background: blue;
+			font-size: 14px;
+			font-family: verdana;
+			color: white;
+		}
+
+
+	.sb{
+		border-radius: 10px;
+		text-align:center;
+		background-color:grey;
+		border-color: black ;
+		width:100px;
+		height: 30px;
+		font-size: 15px;
+	}
+
+	</style>
+	<script>
+		/*registration form*/
+
+		/*check password*/
+		function checkpassword(){
+			if (document.getElementById("pwd").value != document.getElementById("cnfrmpwd").value) {
+				alert("password mismatch!");
+				return false;
+			}
+			else{
+				alert("Success");
+				return true;
+			}
+		}
+		/*checkBox*/
+		function enableButten(){
+			if (document.getElementById("checkbox").checked) {
+				document.getElementById("submitBtn").disabled=false;
+			}
+			else{
+				document.getElementById("submitBtn").disabled=true;
+			}
+		}
+
+		alert("Contact Page Loaded");
+		
+	</script>
+	
+	</head>
+	
+	<body>
+	
+	<center>
+
+	<!-- add a logo (b) -->
+	<img class="logo" src="images/cart.png"width="200px" height="200px" alt="Shopping Cart Image">
+	
+	<!-- add a header (c)-->
+	<h1><pa style="color:yellow">Sandu Mobiles</pa></h1>
+	
+	<!-- add a sub-header (c) -->
+	<h3 id="header"><pa style="color:darkorange"> The Online Shopping Store</pa> </h3>
+	</center>
+	
+	<!-- add a horizontal line (d)-->
+	<hr id="test" />
+	
+	<!-- add a horizontal menu (e) -->
+	<ul class="menu">
+		<li class="menu"> <a href="index.html">Home</a></li>
+		<li class="menu"> <a href="news.html">News</a></li>
+		<li class="menu"> <a href="registration.html">Contact</a></li>
+		<li class="menu"> <a href="AboutUs.php">About Us</a></li>
+	</ul>
+
+		<br><br/>
+		<fieldset>
+		<center><h1><pa style="color:red"> Registration Form</pa></h1></center>
+		<form action="#" target="" method="" onsubmit="return checkPassword ()">
+		  <h4>First name: </h3>
+		  <input type="text" name="firstname" value="First Name" required><br/>
+		  <h4>Last name: </h3>
+		  <input type="text" name="lastname" pLaceholder="Last Name" required><br/>
+		  <h4>Gender:</h3>
+		  <input type="radio" name="gender" checked>Male
+		  <input type="radio" name="gender">Female<br/>
+
+		  <h4>Mobile Number:</h3>
+		  <input type="	phone" name="mobile" pattern="[0-9]{10}" placeholder="1234567890"required><br/>
+		  <h4>Email:</h3>
+		  <input type="	email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}"placeholder="abc@gmail.com"required><br/>
+		  <h4>Address:</h3>
+		  <textarea name="address" rows="8" cols="50" required>	</textarea><br/>
+		  <h4>Choose your DOB</h4>
+		  <input type="date" name="day"required>
+		  <h4>Password:</h4>
+		  <input type="	password" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.+[A-Z]){5,10}">
+		  <h4>Re-enter Password:</h4>
+		  <input type="	password" id="cnfrmpwd"required><br/>
+		</br><input type="checkbox" class="inputstyle" id="checkbox" onclick="enableButten()">Accept Privacy Policy Terms<br/><br/>
+		  <center><input class="sb" type="submit" id="submitBtn" value="Submit" disabled></center>
+		</form>
+		</fieldset>
+	<!-- add a horizontal line (d)-->
+	<hr id="test" >
+
+	
+	<!-- add a footer (g)--> 
+	<center>
+
+		<h4 id="footer"><pa style="color:yellow">Created by : Dilini Sandalika</pa></h5>
+		<a id="footer" href="https://courseweb.sliit.lk/">Visit to Our Course</a>
+	</center>
+	
+	</body>
+</html>

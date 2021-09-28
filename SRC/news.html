@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<!--add a title (a) -->
+	<title >News</title>
+
+	<!--Connect the style sheet (lab 3)-->
+	<link rel="stylesheet" type="text/css"  href="styles/styles.css">
+
+	<script src="js/myScript.js"></script>
+	
+	<script>
+
+		alert("News Page Loaded");
+
+		
+		document.write(Date());
+
+	</script>
+	
+	</head>
+	
+	<body>
+	
+	<center>
+
+	<!-- add a logo (b) -->
+	<img class="logo" src="images/cart.png"width="200px" height="200px" alt="Shopping Cart Image">
+	
+	<!-- add a header (c)-->
+	<h1><pa style="color:yellow">Sandu Mobiles</pa></h1>
+	
+	<!-- add a sub-header (c) -->
+	<h3 id="header"><pa style="color:darkorange"> The Online Shopping Store</pa> </h3>
+	</center>
+	
+	<!-- add a horizontal line (d)-->
+	<hr id="test" />
+	
+	<!-- add a horizontal menu (e) -->
+	<ul class="menu">
+		<li class="menu"> <a href="index.html">Home</a></li>
+		<li class="menu"> <a href="news.html">News</a></li>
+		<li class="menu"> <a href="registration.html">Contact</a></li>
+		<li class="menu"> <a href="AboutUs.php">About Us</a></li>
+	</ul>
+	<div class="newslayout">
+		<button class="bttn1" type="button" id="btn1" ><a href="https://courseweb.sliit.lk/">sandu</a></button>
+	</div>
+
+		<!--create a button-->
+	<div class="newslayout">
+		<button class="bttn1" type="button" id="btn1"onclick="loadData('btn1')">Iphone</button>
+		<button class="bttn1" type="button" id="btn2"onclick="loadData('btn2')">nokia</button>
+		<button class="bttn1" type="button" id="btn3"onclick="loadData('btn3')">samsung</button>
+		<button class="bttn1" type="button" id="btn4"onclick="loadData('btn4')">oppo</button>
+
+		<button class="bttn1" type="button" id="avg"onclick="priceForInLoop()">Average Price</button>
+
+		<!--or
+		<button class="bttn1" type="button" id="avg"onclick="priceForLoop()">Average Price</button> -->
+
+		<button class="bttn1" type="button" id="avg"onclick="priceHigher()">Prices Higher than 1000</button>
+		<button class="bttn1" type="button" id="avg"onclick="priceLower()">Prices lower than 1000</button>
+	</div>
+<center>
+	<img align="center" id="image1" width="400px" height="400px" src="images/mobiles.jpg">
+</center>
+
+	<p  class="text1" id="para">For comparing all your options, there's no resource on the web better than our weekly roundup of the best cell phone deals. We're bringing in every retailer, carrier, and brand into one easy-to-navigate list right here, with plenty of options for all budgets too.This week's best cell phone deals roundup in particular includes some really great options for both new Apple and Samsung flagship devices. The latter are actually still on sale at Amazon this week with some of their lowest prices yet on unlocked devices, and those who like Apple devices will be pleased to see some particularly juicy offers on the 11 series at Verizon. Of course, if you're looking for the 12 series or Google Pixel devices, then you'll find plenty of decent promotions on those devices too.
+	
+
+
+		
+	<!-- add a horizontal line (d)-->
+	<hr id="test" >
+	
+	<!-- add a footer (g)--> 
+	<center>
+		<h3 id="footer"><pa style="color:red">Created by : Dilini Sandalika</pa></h3>
+		<a id="footer" href="https://courseweb.sliit.lk/">Visit to Our Course</a>
+	</center>
+	
+	</body>
+</html>

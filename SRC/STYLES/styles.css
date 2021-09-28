@@ -1,0 +1,126 @@
+/*Add a background image*/
+body{
+	background-image: url("../IMAGES/mybg4.jpg");
+}
+
+/*add a logo*/
+.logo{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*Change the font type and font size of the header1*/
+h1{
+	font-size: 40px;
+	font-weight: bold;
+	font-style: italic;
+}
+/*Change the font type and font size of the header2 */
+h3#header{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 32px;
+}
+
+/*Dashed Red Border*/
+hr#test{
+	border : 5px solid darkred; 
+}
+
+/*Style the menu list (unordered list in index.html) to display horizontally.*/
+ul.menu{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	overflow : hidden;
+	background-color : purple;
+}
+
+/*left align the menu list*/
+li.menu{
+	float: left;
+}
+
+/*style menu list*/
+li a{
+	display:block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration : none;
+}
+
+/*clor pink when pointer arrived*/
+li a:hover{
+	background-color: pink;
+}
+
+/*grey color table background*/
+.productData{
+	background-color: grey;
+	padding: 5px;
+}
+
+/*cloumn 1 test align center*/
+th.col1{
+	text-align : center;
+}
+
+/*cloumn 2 test align left*/
+th.col2{
+	text-align : left;
+}
+
+/*table margin*/
+div.tbl{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/*footer design*/
+h3#footer{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 15px;
+	text-align : center;
+}
+
+/*another footer design*/
+a#footer{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 15px;
+	text-align : center;
+}
+
+/*4th labsheet*/
+div.newslayout{
+	border: 3px solid purple;
+	margin: 25px 20px 20px 20px;
+	text-align: center;
+}
+
+.bttn1{
+	margin: 8px 4px 4px 4px;
+	width: 20;
+	height: 50px;
+	background-color: pink;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.text1{
+	font-size: 16px;
+	font-family: Georgia,serif;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+}
